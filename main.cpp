@@ -13,23 +13,15 @@ video: Chapter 2 - Part 3
  
  1) Write down the names of all of the primitives available in C++ (excluding wchar_t)
  put them here: 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
+ int, double, char, bool, float, void, unsigned int
  
 2) for each primitive type, write out 3 variable declarations inside the variableDeclaration function.
     give each declaration an initial value
         just ignore wchar_t. you do not need to declare 3 variables of type 'wchar_t'
         'void' is a return type. you do not need to declare 3 variables of type 'void'.
     at the end of the function, pass each variable to the ignoreUnused function
- 
+
 3) write out 10 functions
     each declaration should have a random number of parameters in the function parameter list.
     add { ignoreUnused( ); } after each declaration in place of the closing semicolon
@@ -63,9 +55,58 @@ void variableDeclarations()
     //example:
     int number = 2; //declaration of a primitive named 'number' with an initial value of '2'
     
+     //int, double, char, bool, float, void, unsigned int
+
+    int myFirstInt = -1;
+    int mySecondInt = 22000;
+    int myThirdInt = -30526;
+
+    double myFirstDouble = 1.14;
+    double mySecondDouble = 155.35;
+    double myThirdDouble = 33.58;
+
+    float myFirstFloat = 8;
+    float mySecondFloat = 17;
+    float myThirdFloat = 160;
+
+    bool myFirstBool = true;
+    bool mySecondBool = false;
+    bool myThirdBool = true;
+
+    char myFirstChar = 'A';
+    char mySecondChar = '%';
+    char myThirdChar = '4';
     
-    
+    unsigned int myFirstUnsignedInt = 500;
+    unsigned int mySecondUnsignedInt = 1061;
+    unsigned int myThirdUnsignedInt = 8260;
+        
     ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
+
+    ignoreUnused(myFirstInt);
+    ignoreUnused(mySecondInt);
+    ignoreUnused(myThirdInt);
+
+    ignoreUnused(myFirstDouble);
+    ignoreUnused(mySecondDouble);
+    ignoreUnused(myThirdDouble);
+
+    ignoreUnused(myFirstFloat);
+    ignoreUnused(mySecondFloat);
+    ignoreUnused(myThirdFloat);
+
+    ignoreUnused(myFirstBool);
+    ignoreUnused(mySecondBool);
+    ignoreUnused(myThirdBool);
+
+    ignoreUnused(myFirstChar);
+    ignoreUnused(mySecondChar);
+    ignoreUnused(myThirdChar);
+
+    ignoreUnused(myFirstUnsignedInt);
+    ignoreUnused(mySecondUnsignedInt);
+    ignoreUnused(myThirdUnsignedInt);
+
 }
 /*
  10 functions
@@ -81,41 +122,99 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
  1)
  */
 
+int daysTillBirthday(int monthBirthday, int dayBirthday, int currentMonth, int currentDay, int currentYear )
+{
+  ignoreUnused(monthBirthday, dayBirthday, currentMonth, currentDay, currentYear);
+  return{};
+}
+
 /*
  2)
  */
+
+ float heightMetersJumped(float finalSpeed, float acceleration, int distanceRunway)
+ {
+   ignoreUnused(finalSpeed, acceleration, distanceRunway);
+   return{};
+ }
 
 /*
  3)
  */
 
+ bool areNumbersEqual(float number1, float number2)
+ {
+   ignoreUnused(number1, number2);
+   return{};
+ }
+
 /*
  4)
  */
+
+ float interestOverSavings(float savingsValue, unsigned int numberOfMonths, float interest = 2)
+ {
+   ignoreUnused(savingsValue, numberOfMonths, interest);
+   return{};
+ } 
 
 /*
  5)
  */
 
+void changeDifficulty(unsigned int numberOfDeaths, unsigned int level, unsigned int minutesPlayed)
+{
+  ignoreUnused(numberOfDeaths, level, minutesPlayed);
+}
+
 /*
  6)
  */
+
+bool increaseGear(int currentGear, int engineRevolutions)
+{
+  ignoreUnused (currentGear, engineRevolutions);
+  return{};
+}
 
 /*
  7)
  */
 
+ float lowestValue(float value1, float value2, float value3)
+ {
+   ignoreUnused(value1,value2,value3);
+   return{};
+ }
+
 /*
  8)
  */
+
+ void setWakeUpAlarm(int currentTimeInMinutes, int desiredWakeUpTimeInMinutes, bool wakeUpNextDay)
+ {
+   ignoreUnused(currentTimeInMinutes, desiredWakeUpTimeInMinutes, wakeUpNextDay);
+ }
 
 /*
  9)
  */
 
+ float mailDeliveryTime(int kilometersLeft, float averageDrivingSpeed)
+ {
+   ignoreUnused(kilometersLeft, averageDrivingSpeed);
+   return{};
+ }
+
 /*
  10)
  */
+ 
+ bool drinkCoffee(float coffeePrice, int minutesSinceLastCoffee, float hoursOfSleepHad)
+ {
+   ignoreUnused(coffeePrice, minutesSinceLastCoffee, hoursOfSleepHad);
+   return{};
+ }
 
 int main()
 {
@@ -123,27 +222,55 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
+
+    auto daysTillThomasBirthday = daysTillBirthday(12,27,14,3,2020);
     
     //2)
+
+    auto heightJumped = heightMetersJumped(10.50, 1.25, 30);
     
     //3)
+
+    auto sameValues = areNumbersEqual(15,15);
     
     //4)
+
+    auto interest = interestOverSavings(500, 12);
     
     //5)
     
+    changeDifficulty(10,7,805);
+
     //6)
+
+    auto switchGear = increaseGear(3, 3500);
     
     //7)
+
+    auto minimumValue = lowestValue(610.25,1680,15);
     
     //8)
+
+    setWakeUpAlarm(1320,480,1);
     
     //9)
+
+    auto timeTillMailArrival=mailDeliveryTime(105,2.24f); //error without the f, (implicit conversion loses floating-point precision: 'double' to 'float')
     
     //10)
     
+    auto takeACoffee = drinkCoffee(2.95f,180,8);
     
     ignoreUnused(carRented);
+    ignoreUnused(daysTillThomasBirthday);
+    ignoreUnused(heightJumped);
+    ignoreUnused(sameValues);
+    ignoreUnused(interest);
+    ignoreUnused(switchGear);
+    ignoreUnused(minimumValue);
+    ignoreUnused(timeTillMailArrival);
+    ignoreUnused(takeACoffee);
+    
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
