@@ -65,9 +65,9 @@ void variableDeclarations()
     double mySecondDouble = 155.35;
     double myThirdDouble = 33.58;
 
-    float myFirstFloat = 8;
-    float mySecondFloat = 17;
-    float myThirdFloat = 160;
+    float myFirstFloat = 8.15;
+    float mySecondFloat = 17.08;
+    float myThirdFloat = 160.10;
 
     bool myFirstBool = true;
     bool mySecondBool = false;
@@ -83,30 +83,7 @@ void variableDeclarations()
         
     ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
 
-    ignoreUnused(myFirstInt);
-    ignoreUnused(mySecondInt);
-    ignoreUnused(myThirdInt);
-
-    ignoreUnused(myFirstDouble);
-    ignoreUnused(mySecondDouble);
-    ignoreUnused(myThirdDouble);
-
-    ignoreUnused(myFirstFloat);
-    ignoreUnused(mySecondFloat);
-    ignoreUnused(myThirdFloat);
-
-    ignoreUnused(myFirstBool);
-    ignoreUnused(mySecondBool);
-    ignoreUnused(myThirdBool);
-
-    ignoreUnused(myFirstChar);
-    ignoreUnused(mySecondChar);
-    ignoreUnused(myThirdChar);
-
-    ignoreUnused(myFirstUnsignedInt);
-    ignoreUnused(mySecondUnsignedInt);
-    ignoreUnused(myThirdUnsignedInt);
-
+    ignoreUnused(myFirstInt, mySecondInt, myThirdInt, myFirstDouble,mySecondDouble, myThirdDouble, myFirstFloat, mySecondFloat,myThirdFloat, myFirstBool, mySecondBool, myThirdBool, myFirstChar, mySecondChar, myThirdChar, myFirstUnsignedInt, mySecondUnsignedInt, myThirdUnsignedInt);
 }
 /*
  10 functions
@@ -124,8 +101,8 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 
 int daysTillBirthday(int monthBirthday, int dayBirthday, int currentMonth, int currentDay, int currentYear )
 {
-  ignoreUnused(monthBirthday, dayBirthday, currentMonth, currentDay, currentYear);
-  return{};
+    ignoreUnused(monthBirthday, dayBirthday, currentMonth, currentDay, currentYear);
+    return{};
 }
 
 /*
@@ -134,8 +111,8 @@ int daysTillBirthday(int monthBirthday, int dayBirthday, int currentMonth, int c
 
  float heightMetersJumped(float finalSpeed, float acceleration, int distanceRunway)
  {
-   ignoreUnused(finalSpeed, acceleration, distanceRunway);
-   return{};
+    ignoreUnused(finalSpeed, acceleration, distanceRunway);
+    return{};
  }
 
 /*
@@ -144,8 +121,8 @@ int daysTillBirthday(int monthBirthday, int dayBirthday, int currentMonth, int c
 
  bool areNumbersEqual(float number1, float number2)
  {
-   ignoreUnused(number1, number2);
-   return{};
+    ignoreUnused(number1, number2);
+    return{};
  }
 
 /*
@@ -154,8 +131,8 @@ int daysTillBirthday(int monthBirthday, int dayBirthday, int currentMonth, int c
 
  float interestOverSavings(float savingsValue, unsigned int numberOfMonths, float interest = 2)
  {
-   ignoreUnused(savingsValue, numberOfMonths, interest);
-   return{};
+    ignoreUnused(savingsValue, numberOfMonths, interest);
+    return{};
  } 
 
 /*
@@ -164,7 +141,7 @@ int daysTillBirthday(int monthBirthday, int dayBirthday, int currentMonth, int c
 
 void changeDifficulty(unsigned int numberOfDeaths, unsigned int level, unsigned int minutesPlayed)
 {
-  ignoreUnused(numberOfDeaths, level, minutesPlayed);
+    ignoreUnused(numberOfDeaths, level, minutesPlayed);
 }
 
 /*
@@ -173,8 +150,8 @@ void changeDifficulty(unsigned int numberOfDeaths, unsigned int level, unsigned 
 
 bool increaseGear(int currentGear, int engineRevolutions)
 {
-  ignoreUnused (currentGear, engineRevolutions);
-  return{};
+    ignoreUnused (currentGear, engineRevolutions);
+    return{};
 }
 
 /*
@@ -183,8 +160,8 @@ bool increaseGear(int currentGear, int engineRevolutions)
 
  float lowestValue(float value1, float value2, float value3)
  {
-   ignoreUnused(value1,value2,value3);
-   return{};
+    ignoreUnused(value1,value2,value3);
+    return{};
  }
 
 /*
@@ -193,7 +170,7 @@ bool increaseGear(int currentGear, int engineRevolutions)
 
  void setWakeUpAlarm(int currentTimeInMinutes, int desiredWakeUpTimeInMinutes, bool wakeUpNextDay)
  {
-   ignoreUnused(currentTimeInMinutes, desiredWakeUpTimeInMinutes, wakeUpNextDay);
+    ignoreUnused(currentTimeInMinutes, desiredWakeUpTimeInMinutes, wakeUpNextDay);
  }
 
 /*
@@ -202,8 +179,8 @@ bool increaseGear(int currentGear, int engineRevolutions)
 
  float mailDeliveryTime(int kilometersLeft, float averageDrivingSpeed)
  {
-   ignoreUnused(kilometersLeft, averageDrivingSpeed);
-   return{};
+    ignoreUnused(kilometersLeft, averageDrivingSpeed);
+    return{};
  }
 
 /*
@@ -212,8 +189,8 @@ bool increaseGear(int currentGear, int engineRevolutions)
  
  bool drinkCoffee(float coffeePrice, int minutesSinceLastCoffee, float hoursOfSleepHad)
  {
-   ignoreUnused(coffeePrice, minutesSinceLastCoffee, hoursOfSleepHad);
-   return{};
+    ignoreUnused(coffeePrice, minutesSinceLastCoffee, hoursOfSleepHad);
+    return{};
  }
 
 int main()
@@ -223,7 +200,7 @@ int main()
     
     //1)
 
-    auto daysTillThomasBirthday = daysTillBirthday(12,27,14,3,2020);
+    auto daysTillThomasBirthday = daysTillBirthday( 12, 27, 14, 3, 2020);
     
     //2)
 
@@ -231,7 +208,7 @@ int main()
     
     //3)
 
-    auto sameValues = areNumbersEqual(15,15);
+    auto sameValues = areNumbersEqual(15, 15);
     
     //4)
 
@@ -239,7 +216,7 @@ int main()
     
     //5)
     
-    changeDifficulty(10,7,805);
+    changeDifficulty(10, 7, 805);
 
     //6)
 
@@ -247,29 +224,21 @@ int main()
     
     //7)
 
-    auto minimumValue = lowestValue(610.25,1680,15);
+    auto minimumValue = lowestValue(610.25, 1680,15);
     
     //8)
 
-    setWakeUpAlarm(1320,480,1);
+    setWakeUpAlarm(1320, 480,1);
     
     //9)
 
-    auto timeTillMailArrival=mailDeliveryTime(105,2.24f); //error without the f, (implicit conversion loses floating-point precision: 'double' to 'float')
+    auto timeTillMailArrival=mailDeliveryTime(105, 2.24f); //error without the f, (implicit conversion loses floating-point precision: 'double' to 'float')
     
     //10)
     
-    auto takeACoffee = drinkCoffee(2.95f,180,8);
+    auto takeACoffee = drinkCoffee(2.95f, 180, 8);
     
-    ignoreUnused(carRented);
-    ignoreUnused(daysTillThomasBirthday);
-    ignoreUnused(heightJumped);
-    ignoreUnused(sameValues);
-    ignoreUnused(interest);
-    ignoreUnused(switchGear);
-    ignoreUnused(minimumValue);
-    ignoreUnused(timeTillMailArrival);
-    ignoreUnused(takeACoffee);
+    ignoreUnused(carRented, daysTillThomasBirthday, heightJumped, sameValues, interest, switchGear, minimumValue, timeTillMailArrival, takeACoffee);
     
     std::cout << "good to go!" << std::endl;
     return 0;    
