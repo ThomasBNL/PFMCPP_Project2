@@ -95,7 +95,7 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
     return {}; //if your function returns something other than void, add 'return {};' at the end of it.
 } 
 
-/*
+ /*
  1)
  */
 
@@ -105,37 +105,37 @@ int daysTillBirthday(int monthBirthday, int dayBirthday, int currentMonth, int c
     return{};
 }
 
-/*
+ /*
  2)
  */
 
- float heightMetersJumped(float finalSpeed, float acceleration, int distanceRunway)
- {
+float heightMetersJumped(float finalSpeed, float acceleration, int distanceRunway)
+{
     ignoreUnused(finalSpeed, acceleration, distanceRunway);
     return{};
- }
+}
 
-/*
+ /*
  3)
  */
 
- bool areNumbersEqual(float number1, float number2)
- {
+bool areNumbersEqual(float number1, float number2)
+{
     ignoreUnused(number1, number2);
     return{};
- }
+}
 
-/*
+ /*
  4)
  */
 
- float interestOverSavings(float savingsValue, unsigned int numberOfMonths, float interest = 2)
- {
+float interestOverSavings(float savingsValue, unsigned int numberOfMonths, float interest = 2)
+{
     ignoreUnused(savingsValue, numberOfMonths, interest);
     return{};
- } 
+} 
 
-/*
+ /*
  5)
  */
 
@@ -144,7 +144,7 @@ void changeDifficulty(unsigned int numberOfDeaths, unsigned int level, unsigned 
     ignoreUnused(numberOfDeaths, level, minutesPlayed);
 }
 
-/*
+ /*
  6)
  */
 
@@ -154,44 +154,44 @@ bool increaseGear(int currentGear, int engineRevolutions)
     return{};
 }
 
-/*
+ /*
  7)
  */
 
- float lowestValue(float value1, float value2, float value3)
- {
-    ignoreUnused(value1,value2,value3);
+float lowestValue(float value1, float value2, float value3)
+{
+    ignoreUnused(value1, value2, value3);
     return{};
- }
+}
 
-/*
+ /*
  8)
  */
 
- void setWakeUpAlarm(int currentTimeInMinutes, int desiredWakeUpTimeInMinutes, bool wakeUpNextDay)
- {
+void setWakeUpAlarm(int currentTimeInMinutes, int desiredWakeUpTimeInMinutes, bool wakeUpNextDay)
+{
     ignoreUnused(currentTimeInMinutes, desiredWakeUpTimeInMinutes, wakeUpNextDay);
- }
+}
 
-/*
+ /*
  9)
  */
 
- float mailDeliveryTime(int kilometersLeft, float averageDrivingSpeed)
- {
+float mailDeliveryTime(int kilometersLeft, float averageDrivingSpeed)
+{
     ignoreUnused(kilometersLeft, averageDrivingSpeed);
     return{};
- }
+}
 
-/*
+ /*
  10)
  */
  
- bool drinkCoffee(float coffeePrice, int minutesSinceLastCoffee, float hoursOfSleepHad)
- {
+bool drinkCoffee(float coffeePrice, int minutesSinceLastCoffee, float hoursOfSleepHad)
+{
     ignoreUnused(coffeePrice, minutesSinceLastCoffee, hoursOfSleepHad);
     return{};
- }
+}
 
 int main()
 {
