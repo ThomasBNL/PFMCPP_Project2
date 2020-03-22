@@ -65,9 +65,9 @@ void variableDeclarations()
     double mySecondDouble = 155.35;
     double myThirdDouble = 33.58;
 
-    float myFirstFloat = 8.15;
-    float mySecondFloat = 17.08;
-    float myThirdFloat = 160.10;
+    float myFirstFloat = 8.15f;
+    float mySecondFloat = 17.08f;
+    float myThirdFloat = 160.10f;
 
     bool myFirstBool = true;
     bool mySecondBool = false;
