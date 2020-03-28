@@ -199,43 +199,33 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-
     auto daysTillThomasBirthday = daysTillBirthday(12, 27, 3, 14, 2020);
     
     //2)
-
     auto heightJumped = heightMetersJumped(10.50, 1.25);
     
     //3)
-
     auto sameValues = areNumbersEqual(15, 15);
     
     //4)
-
     auto interest = interestOverSavings(500, 12);
     
     //5)
-    
     changeDifficulty(7, 805, 10);
 
     //6)
-
     auto switchGear = increaseGear(3500, 3);
     
     //7)
-
     auto minimumValue = lowestValue(610.25, 1680, 15);
     
     //8)
-
     setWakeUpAlarm(1320, 480, 1);
     
     //9)
-
     auto timeTillMailArrival=mailDeliveryTime(105, 2.24f); //error without the f, (implicit conversion loses floating-point precision: 'double' to 'float')
     
     //10)
-    
     auto takeACoffee = drinkCoffee(2.95f, 180, 8);
     
     ignoreUnused(carRented, daysTillThomasBirthday, heightJumped, sameValues, interest, switchGear, minimumValue, timeTillMailArrival, takeACoffee);
