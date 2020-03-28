@@ -109,7 +109,7 @@ int daysTillBirthday(int monthBirthday, int dayBirthday, int currentMonth, int c
  2)
  */
 
-float heightMetersJumped(float finalSpeed, float acceleration, int distanceRunway)
+float heightMetersJumped(float finalSpeed, float acceleration, int distanceRunway = 100)
 {
     ignoreUnused(finalSpeed, acceleration, distanceRunway);
     return{};
@@ -129,7 +129,7 @@ bool areNumbersEqual(float number1, float number2)
  4)
  */
 
-float interestOverSavings(float savingsValue, unsigned int numberOfMonths, float interest = 2)
+float interestOverSavings(float savingsValue, unsigned int numberOfMonths, float interest = 2.15f)
 {
     ignoreUnused(savingsValue, numberOfMonths, interest);
     return{};
@@ -139,18 +139,18 @@ float interestOverSavings(float savingsValue, unsigned int numberOfMonths, float
  5)
  */
 
-void changeDifficulty(unsigned int numberOfDeaths, unsigned int level, unsigned int minutesPlayed)
+void changeDifficulty(unsigned int level, unsigned int minutesPlayed, unsigned int numberOfDeaths = 0)
 {
-    ignoreUnused(numberOfDeaths, level, minutesPlayed);
+    ignoreUnused(level, minutesPlayed, numberOfDeaths);
 }
 
  /*
  6)
  */
 
-bool increaseGear(int currentGear, int engineRevolutions)
+bool increaseGear(int engineRevolutions, int currentGear = 1)
 {
-    ignoreUnused (currentGear, engineRevolutions);
+    ignoreUnused (engineRevolutions, currentGear);
     return{};
 }
 
@@ -177,7 +177,7 @@ void setWakeUpAlarm(int currentTimeInMinutes, int desiredWakeUpTimeInMinutes, bo
  9)
  */
 
-float mailDeliveryTime(int kilometersLeft, float averageDrivingSpeed)
+float mailDeliveryTime(int kilometersLeft, float averageDrivingSpeed = 70.5f)
 {
     ignoreUnused(kilometersLeft, averageDrivingSpeed);
     return{};
@@ -200,11 +200,11 @@ int main()
     
     //1)
 
-    auto daysTillThomasBirthday = daysTillBirthday( 12, 27, 14, 3, 2020);
+    auto daysTillThomasBirthday = daysTillBirthday(12, 27, 3, 14, 2020);
     
     //2)
 
-    auto heightJumped = heightMetersJumped(10.50, 1.25, 30);
+    auto heightJumped = heightMetersJumped(10.50, 1.25);
     
     //3)
 
@@ -216,19 +216,19 @@ int main()
     
     //5)
     
-    changeDifficulty(10, 7, 805);
+    changeDifficulty(7, 805, 10);
 
     //6)
 
-    auto switchGear = increaseGear(3, 3500);
+    auto switchGear = increaseGear(3500, 3);
     
     //7)
 
-    auto minimumValue = lowestValue(610.25, 1680,15);
+    auto minimumValue = lowestValue(610.25, 1680, 15);
     
     //8)
 
-    setWakeUpAlarm(1320, 480,1);
+    setWakeUpAlarm(1320, 480, 1);
     
     //9)
 
